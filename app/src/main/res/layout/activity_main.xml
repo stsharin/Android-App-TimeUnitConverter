@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bcwood"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bcwood"
+        android:hint="Enter your value"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/edit_show"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bcwood"
+        android:hint="Result"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ffffff"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textColor="#ffffff"
+        android:onClick="con"
+        android:background="#7e1c1c"
+        android:layout_marginTop="12dp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset"
+        android:textColor="#ffffff"
+        android:onClick="con"
+        android:background="#7e1c1c"
+        android:layout_marginTop="10dp"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_marginTop="27dp">
+
+                <RadioButton
+                    android:id="@+id/rd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Second -> Millisecond"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Millisecond -> Second"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Microsecond -> Nanosecond"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nanosecond -> Microsecond"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Millisecond -> Minute"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minute -> Millisecond"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+
+                <RadioButton
+                    android:id="@+id/rd7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Second -> Minute"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minute -> Second"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day -> Hour"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day -> Month"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day -> Year"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Month -> Day"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Month -> Hour"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rd14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year -> Hour"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rd15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year -> Day"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/rd16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hour -> Second"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+
+                <RadioButton
+                    android:id="@+id/rd17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Second -> Hour"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rd18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Century -> Year"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rd19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year -> Century"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
